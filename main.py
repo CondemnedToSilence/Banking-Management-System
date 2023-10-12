@@ -45,39 +45,39 @@ def Security_Check(acc_no,passwd):
                 return False
                 
 def validate(Account_obj):
-    if(!validate_BankName(Account_obj.bank_name)):
+    if(not validate_BankName(Account_obj.bank_name)):
         print("Invalid Bank Name")
         return False
-    if(!validate_IFSC(a)(Account_obj.ifsc_code)):
+    if(not validate_IFSC(a)(Account_obj.ifsc_code)):
         print("Invalid IFSC Code")
         return False
-    if(!validate_AccountNo(Account_obj.acc_no)):
+    if(not validate_AccountNo(Account_obj.acc_no)):
         print("Invalid Account Number")
         return False
-    if(!validate_Name(a)(Account_obj.name)):
+    if(not validate_Name(a)(Account_obj.name)):
         print("Invalid Name")
         return False
-    if(!validate_Age(Account_obj.age)):
+    if(not validate_Age(Account_obj.age)):
         print("Invalid Age")
         return False
-    if(!validate_Gender(Account_obj.sex)):
+    if(not validate_Gender(Account_obj.sex)):
         print("Invalid Gender")
         return False
-    if(!validate_DOB(Account_obj.dob)):
+    if( not validate_DOB(Account_obj.dob)):
         print("Invalid Date of Birth")
-    if(!validate_City(Account_obj.city)):
+    if(not validate_City(Account_obj.city)):
         print("Invalid City")
         return False
-    if(!validate_Type(Account_obj.acc_type)):
+    if(not validate_Type(Account_obj.acc_type)):
         print("Invalid Account Type")
         return False
-    if(!validate_Balance(Account_obj.balance)):
+    if(not validate_Balance(Account_obj.balance)):
         print("Invalid Balance")
         return False
-    if(!validate_PAN(Account_obj.pan)):
+    if(not validate_PAN(Account_obj.pan)):
         print("Invalid PAN")
         return False
-    if(!validate_Aadhar(Account_obj.aadhar)):
+    if(not validate_Aadhar(Account_obj.aadhar)):
         print("Invalid AAdhar")
         return False
     return True
@@ -210,8 +210,6 @@ while True:
                     obj_2.address = a_3
                     if(validate(obj_2)):
                         Account_details_dict[acc_no1] = obj_2
-                    else:
-                        print("Invalid Input!!")
                     else:
                         print("Invalid Input!!")
                 elif(choice == 9):
