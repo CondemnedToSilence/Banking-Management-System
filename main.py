@@ -34,6 +34,7 @@ class Account():
         print("Aadhar Number: ",self.aadhar)
 
 ################################################################
+obj_test = Account("HDFC","ICIC0ALS987","012345678910","Manu N Prabhu","22","Male","01/10/2001","fgvjb","Chennai","Savings","12000","GACPP1234C","111122223333","password")
 Account_details_dict = {}
 
 
@@ -48,13 +49,13 @@ def validate(Account_obj):
     if(not validate_BankName(Account_obj.bank_name)):
         print("Invalid Bank Name")
         return False
-    if(not validate_IFSC(a)(Account_obj.ifsc_code)):
+    if(not validate_IFSC(Account_obj.ifsc_code)):
         print("Invalid IFSC Code")
         return False
     if(not validate_AccountNo(Account_obj.acc_no)):
         print("Invalid Account Number")
         return False
-    if(not validate_Name(a)(Account_obj.name)):
+    if(not validate_Name(Account_obj.name)):
         print("Invalid Name")
         return False
     if(not validate_Age(Account_obj.age)):
@@ -81,6 +82,7 @@ def validate(Account_obj):
         print("Invalid AAdhar")
         return False
     return True
+validate(obj_test)
 #################################################################
 while True:
     print("Press 1 to Create Account")
