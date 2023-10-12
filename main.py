@@ -1,4 +1,4 @@
-from validte import *
+from validate import *
 
 class Account():
     def __init__(self,bank_name,ifsc_code,acc_no,name,age,sex,dob,address,city,acc_type,balance,pan,aadhar,password):
