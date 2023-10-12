@@ -6,7 +6,7 @@ def validate_BankName(a):
         return False
     
 def validate_IFSC(a):
-    if((len(a) == 11) and (a[0:3].isupper()) and (a[4] == '0') and (a[5:].isalnum())):
+    if((len(a) == 11) and (a[0:4].isupper()) and (a[4] == '0') and (a[5:].isalnum())):
         return True
     else:
         return False
@@ -39,7 +39,7 @@ def validate_DOB(a):
     #dd\mm\yyyy
     days_31 = [1,3,5,7,8,10,12]
     days_30 = [4,6,9,11]
-    b  = a.split('\\')
+    b  = a.split('/')
     if((int(b[1]) >= 1) and (int(b[1]) <=12) and (b[2].isnumeric) and (int(b[2]) > 0) and (int(b[0])>0)): 
         if(((int(b[1]) in days_31 )and (int(b[0])<=31))  or  (int(b[1]) in days_30 and (int(b[0])<=30))  or ((int(b[1]) == 2) and (int(b[0]) < 29))):
             return True
@@ -78,7 +78,7 @@ def validate_Balance(a):
     else:
         return False
 def validate_PAN(a):
-    if(a[0:5].isalpha() and a[5:9].isnumeric() and a[10].isalpha() and a.isupper() and (len(a) == 10)):
+    if(a[0:5].isalpha() and a[5:9].isnumeric() and a[9].isalpha() and a.isupper() and (len(a) == 10)):
         return True
     else:
         return False
