@@ -131,7 +131,143 @@ while True:
         acc_no1 = input("Enter Account Number:")
         pwd_1 = input("Enter Password:")
         if(Security_Check(acc_no1,pwd_1)):
-            
+            while True:
+                print("1 : Press 1 to Update Bank Name")
+                print("2 : Press 2 to Update IFSC Code")
+                print("3 : Press 3 to Update Account Number")
+                print("4 : Press 4 to Update Name")
+                print("5 : Press 5 to Update Age")
+                print("6 : Press 6 to Update Sex")
+                print("7 : Press 7 to Update D.O.B")
+                print("8 : Press 8 to Update Address")
+                print("9 : Press 9 to Update City")
+                print("10: Press 10 to Update Account Type")
+                print("11: Press 11 to Update Balance")
+                print("12: Press 12 to Update PAN")
+                print("13: Press 13 to Update AADHAR")
+                print("14: Press 14 to Update Password")
+                choice_2 = int(input("Please enter your choice:")) 
+                if(choice == 1):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.bank_name = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1].bank_name = obj_2
+                    else:
+                        print("Invalid Input!!")
+                elif(choice == 2):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.ifsc_code = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                elif(choice == 3):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.acc_no = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                elif(choice == 4):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.name = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                elif(choice == 5):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.age = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")       
+                elif(choice == 6):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.sex = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                elif(choice == 7):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.dob = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                        
+                elif(choice == 8):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.address = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                    else:
+                        print("Invalid Input!!")
+                elif(choice == 9):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.city = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                        
+                elif(choice == 10):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.acc_type = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                        
+                elif(choice == 11):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.balance = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                        
+                elif(choice == 12):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.pan = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                        
+                elif(choice == 13):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.aadhar = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                    else:
+                        print("Invalid Input!!")
+                elif(choice == 14):
+                    a_3 = input("Enter updated input")
+                    obj_2 = Account_details_dict[acc_no1]
+                    obj_2.password = a_3
+                    if(validate(obj_2)):
+                        Account_details_dict[acc_no1] = obj_2
+                else:
+                    print("Invalid Input!!")
+                        
+                
         else:
             print("Password or Account Number is wrong. Try Again!")
 
